@@ -1,14 +1,13 @@
 import React from 'react';
-import sofa from '../../assets/sofa.png'; 
+import sofa from '../../assets/sofa.png';
 
 const Deals = () => {
     return (
         <div className="relative w-full p-8">
             {/* Main Section */}
-            <div className="gap-10 grid grid-flow-row grid-cols-1 md:grid-cols-5 z-10 max-w-6xl p-8 bg-white rounded-lg shadow-lg mx-auto">
-                
+            <div className="gap-10 grid grid-flow-row grid-cols-1 md:grid-cols-5 z-10 max-w-6xl p-8 bg-white rounded-lg shadow-lg mx-auto relative">
                 {/* Left Image (40% width) */}
-                <div className="md:col-span-2">
+                <div className="md:col-span-2 relative">
                     <img
                         src={sofa}
                         alt="Main Sofa"
@@ -27,38 +26,38 @@ const Deals = () => {
                     <button className="bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition duration-300">
                         Shop Now
                     </button>
-                </div>
-            </div>
 
-            {/* Thumbnails Container */}
-            <div className="relative flex space-x-6 left-[15rem] top-[-10rem] mt-5 max-w-4xl mx-auto p-1">
-                <div className="w-1/5 p-1 bg-white rounded-md">
-                    <img
-                        src={sofa}
-                        alt="Thumbnail 1"
-                        className="w-full rounded-sm"
-                    />
-                </div>
-                <div className="w-1/5 p-1 bg-white rounded-md">
-                    <img
-                        src={sofa}
-                        alt="Thumbnail 2"
-                        className="w-full rounded-sm"
-                    />
-                </div>
-                <div className="w-1/5 p-1 bg-white rounded-md">
-                    <img
-                        src={sofa}
-                        alt="Thumbnail 3"
-                        className="w-full rounded-sm"
-                    />
-                </div>
-                <div className="w-1/5 p-1 bg-white rounded-md">
-                    <img
-                        src={sofa}
-                        alt="Thumbnail 4"
-                        className="w-full rounded-sm"
-                    />
+                    {/* Thumbnails Container */}
+                    <div className="absolute top-[80%] left-[-100px] flex space-x-4 bg-white shadow-md p-2 rounded-md">
+                        <div className="w-16 h-16 bg-gray-100 rounded-md overflow-hidden">
+                            <img
+                                src={sofa}
+                                alt="Thumbnail 1"
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div className="w-16 h-16 bg-gray-100 rounded-md overflow-hidden">
+                            <img
+                                src={sofa}
+                                alt="Thumbnail 2"
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div className="w-16 h-16 bg-gray-100 rounded-md overflow-hidden">
+                            <img
+                                src={sofa}
+                                alt="Thumbnail 3"
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div className="w-16 h-16 bg-gray-100 rounded-md overflow-hidden">
+                            <img
+                                src={sofa}
+                                alt="Thumbnail 4"
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

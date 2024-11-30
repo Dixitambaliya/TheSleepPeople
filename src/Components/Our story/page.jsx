@@ -1,19 +1,22 @@
-import React from 'react'
-import sofa from '../../assets/sofa.png'
+import React from 'react';
+import sofa from '../../assets/sofa.png';
 
 const page = () => {
     return (
-        <div className="bg-gray-50 py-16 px-8">
+        <div className="bg-gray-50 py-16 px-8 relative">
+            <div className=" top-10 left-10 w-20 absolute h-20 bg-gray-300 rounded-full opacity-30"></div>
+            <div className=" top-10 left-[80%] absolute w-20 h-20 bg-gray-300 rounded-full opacity-30"></div>
+            <div className=" top-[70%] left-10 w-11 h-11 absolute bg-gray-300 rounded-full opacity-30"></div>
             {/* Container */}
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
                 {/* Image Section */}
                 <div className="relative w-full lg:w-1/2">
                     {/* Background Highlight */}
-                    <div className="absolute -top-8 -left-8 w-full h-full bg-green-100 rounded-xl"></div>
+                    <div className="absolute -top-8 -left-8 w-3/4 h-full bg-green-100"></div>
                     <img
                         src={sofa}
                         alt="Bed"
-                        className="relative w-full rounded-xl shadow-lg"
+                        className="relative w-[75%] h-auto shadow-lg"
                     />
                 </div>
                 {/* Text Section */}
@@ -37,4 +40,4 @@ const page = () => {
     );
 };
 
-export default page
+export default page;
