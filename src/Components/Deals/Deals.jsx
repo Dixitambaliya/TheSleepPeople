@@ -31,33 +31,33 @@ const Deals = () => {
             </div>
 
             {/* Thumbnails Container */}
-            <div className="border-2 border-black relative flex space-x-2 left-[15rem] top-[-10rem] mt-8 max-w-4xl mx-auto p-1 rounded-lg">
-                <div className="w-1/6">
+            <div className="relative flex space-x-6 left-[15rem] top-[-10rem] mt-5 max-w-4xl mx-auto p-1">
+                <div className="w-1/5 p-1 bg-white rounded-md">
                     <img
                         src={sofa}
                         alt="Thumbnail 1"
-                        className="w-full rounded-lg"
+                        className="w-full rounded-sm"
                     />
                 </div>
-                <div className="w-1/6">
+                <div className="w-1/5 p-1 bg-white rounded-md">
                     <img
                         src={sofa}
                         alt="Thumbnail 2"
-                        className="w-full rounded-lg"
+                        className="w-full rounded-sm"
                     />
                 </div>
-                <div className="w-1/6">
+                <div className="w-1/5 p-1 bg-white rounded-md">
                     <img
                         src={sofa}
                         alt="Thumbnail 3"
-                        className="w-full rounded-lg"
+                        className="w-full rounded-sm"
                     />
                 </div>
-                <div className="w-1/6">
+                <div className="w-1/5 p-1 bg-white rounded-md">
                     <img
                         src={sofa}
                         alt="Thumbnail 4"
-                        className="w-full rounded-lg"
+                        className="w-full rounded-sm"
                     />
                 </div>
             </div>

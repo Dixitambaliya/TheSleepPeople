@@ -6,6 +6,7 @@ import Carousel from './Components/Carousel/Carousel.jsx'
 import Brand from './Components/Brand/Brand.jsx'
 import Deals from './Components/Deals/Deals.jsx'
 import Category from './Components/Category/Category.jsx'
+import Page from './Components/Our story/page.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,5 +15,6 @@ createRoot(document.getElementById('root')).render(
     <Brand/>
     <Category/>
     <Deals/>
+    <Page/>
   </StrictMode>,
 )
