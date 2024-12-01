@@ -1,29 +1,25 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from './Components/Navigation/Navbar'; 
-import Home from './Components/Navigation/Home';
-import Carousel from './Components/Carousel/Carousel'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-const AppContent = () => {
-  return (
-    <>
-      <Navbar /> 
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/Carousel' element={<Carousel/>}/>
-        <Route path='/registration' element={<div>Registration Page</div>} />
-      </Routes>
-    </>
-  );
-};
+import { Routes, Route } from 'react-router-dom';
+import Brand from './Components/Brand/Brand.jsx';
+import Deals from './Components/Deals/Deals.jsx';
+import Category from './Components/Category/Category.jsx';
+import Page from './Components/Our story/Page.jsx';
+import Productlist from './Components/Category/Productlist.jsx';
+import Home from './Components/Navigation/Home.jsx';
+import Layout from './Components/Navigation/Layout.jsx'; 
 
 const App = () => {
   return (
-    <Router>
-      <AppContent />
-    </Router>
+    <Routes>
+      {/* Default layout route */}
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="brand" element={<Brand />} />
+        <Route path="category" element={<Category />} />
+        <Route path="productlist" element={<Productlist />} />
+        <Route path="deals" element={<Deals />} />
+        <Route path="page" element={<Page />} />
+      </Route>
+    </Routes>
   );
 };
 

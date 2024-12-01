@@ -1,20 +1,19 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import Carousel from './Components/Carousel/Carousel.jsx'
-import Brand from './Components/Brand/Brand.jsx'
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App.jsx';
 import Deals from './Components/Deals/Deals.jsx'
-import Category from './Components/Category/Category.jsx'
-import Page from './Components/Our story/page.jsx'
+import Brand from './Components/Brand/Brand.jsx'
+import Category from './Components/Category/Category.jsx';
+import Page from './Components/Our story/Page.jsx'
+import Navbar from './Components/Navigation/Navbar.jsx'
+import Carousel from './Components/Carousel/Carousel.jsx'
+
+import './index.css';
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-    <Carousel/>
-    <Brand/>
-    <Category/>
-    <Deals/>
-    <Page/>
-  </StrictMode>,
-)
+    <BrowserRouter>
+      <App />
+
+    </BrowserRouter>
+  
+);
