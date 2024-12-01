@@ -1,6 +1,6 @@
 import React from 'react';
 import sofa from '../../assets/sofa.png';
-
+import mattress from '../../assets/mattress.png'
 const Deals = () => {
     return (
         <div className="relative w-full p-8">
@@ -29,28 +29,28 @@ const Deals = () => {
 
                     {/* Thumbnails Container */}
                     <div className="absolute top-[80%] left-[-100px] flex space-x-4 bg-white shadow-md p-2 rounded-md">
-                        <div className="w-16 h-16 bg-gray-100 rounded-md overflow-hidden">
+                        <div className="w-32 h-32 bg-gray-100 rounded-md overflow-hidden">
                             <img
-                                src={sofa}
+                                src={mattress}
                                 alt="Thumbnail 1"
                                 className="w-full h-full object-cover"
                             />
                         </div>
-                        <div className="w-16 h-16 bg-gray-100 rounded-md overflow-hidden">
+                        <div className="w-32 h-32 bg-gray-100 rounded-md overflow-hidden">
                             <img
                                 src={sofa}
                                 alt="Thumbnail 2"
                                 className="w-full h-full object-cover"
                             />
                         </div>
-                        <div className="w-16 h-16 bg-gray-100 rounded-md overflow-hidden">
+                        <div className="w-32 h-32 bg-gray-100 rounded-md overflow-hidden">
                             <img
                                 src={sofa}
                                 alt="Thumbnail 3"
                                 className="w-full h-full object-cover"
                             />
                         </div>
-                        <div className="w-16 h-16 bg-gray-100 rounded-md overflow-hidden">
+                        <div className="w-32 h-32 bg-gray-100 rounded-md overflow-hidden">
                             <img
                                 src={sofa}
                                 alt="Thumbnail 4"

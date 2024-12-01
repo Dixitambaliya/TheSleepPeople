@@ -1,18 +1,30 @@
 import React from 'react';
+import sealy from '../../assets/sealy.png'
+import simba from '../../assets/simba.png'
+import relyen from '../../assets/relyen.png'
+import hypnos from '../../assets/hypnos.png'
+import emma from '../../assets/emma.png'
+import duo from '../../assets/duo.png'
+import silent from '../../assets/silent.png'
+import sleep from '../../assets/sleepsoul.png'
+import british from '../../assets/british.png'
+
+
+
 
 const brands = [
-  { name: 'The British Bed Company', logo: ' ' },
-  { name: 'Dunlopillo', logo: ' ' },
-  { name: 'Hypnos', logo: ' ' },
-  { name: 'Silentnight', logo: ' ' },
-  { name: 'Sealy', logo: ' ' },
-  { name: 'Relyon', logo: ' ' },
-  { name: 'SleepSoul', logo: ' ' },
-  { name: 'Emma', logo: ' ' },
-  { name: 'Simba', logo: ' ' },
-  { name: 'Relyon', logo: ' ' },
-  { name: 'Hypnos', logo: ' ' },
-  { name: 'The British Bed Company', logo: ' ' },
+  { name: 'The British Bed Company', logo: british },
+  { name: 'Dunlopillo', logo: duo },
+  { name: 'Hypnos', logo: hypnos },
+  { name: 'Silentnight', logo: silent },
+  { name: 'Sealy', logo: sealy },
+  { name: 'Relyon', logo: relyen },
+  { name: 'SleepSoul', logo: sleep },
+  { name: 'Emma', logo: emma },
+  { name: 'Simba', logo: simba },
+  { name: 'Relyon', logo: relyen },
+  { name: 'Hypnos', logo: hypnos },
+  { name: 'The British Bed Company', logo: british },
 ];
 
 const BrandSection = () => {

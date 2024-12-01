@@ -1,4 +1,8 @@
 import React from 'react';
+import bedsheet from '../../assets/bedsheet.png'
+import mattress from '../../assets/mattress.png'
+import fabric from '../../assets/fabric.png'
+
 
 const Category = () => {
   return (
@@ -19,7 +23,7 @@ const Category = () => {
           {/* Card 1 */}
           <div className="flex flex-col items-center justify-center max-w-sm p-4 bg-white rounded-lg shadow-lg">
             <img
-              src="path/to/mattress-image.jpg"
+              src={mattress}
               alt="Mattresses"
               className="w-full h-48 object-cover rounded-md mb-4"
             />
@@ -32,7 +36,7 @@ const Category = () => {
           {/* Card 2 */}
           <div className="flex flex-col items-center justify-center max-w-sm p-4 bg-white rounded-lg shadow-lg">
             <img
-              src="path/to/fabric-bed-image.jpg"
+            src={fabric}
               alt="Fabric Beds"
               className="w-full h-48 object-cover rounded-md mb-4"
             />
@@ -45,7 +49,7 @@ const Category = () => {
           {/* Card 3 */}
           <div className="flex flex-col items-center justify-center max-w-sm p-4 bg-white rounded-lg shadow-lg">
             <img
-              src="path/to/wooden-bed-image.jpg"
+              src={bedsheet}
               alt="Wooden Beds"
               className="w-full h-48 object-cover rounded-md mb-4"
             />
