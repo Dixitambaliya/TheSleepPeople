@@ -9,9 +9,6 @@ import silent from '../../assets/silent.png'
 import sleep from '../../assets/sleepsoul.png'
 import british from '../../assets/british.png'
 
-
-
-
 const brands = [
   { name: 'The British Bed Company', logo: british },
   { name: 'Dunlopillo', logo: duo },

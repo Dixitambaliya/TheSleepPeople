@@ -16,7 +16,7 @@ const Navbar = () => {
             src={logo}  
             alt="Logo"
             className="h-8 mr-2"
-          />
+          />  
           <span className="font-bold text-xl text-green-700">The Sleep People</span>
         </div>
 
